@@ -6,11 +6,11 @@
 }
 
 .card {
-  @apply p-4 rounded-lg shadow-lg;
+  @apply py-4;
 }
 
 @screen md {
   .card {
-    @apply p-8;
+    @apply py-8;
   }
 }
