@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
       <Seo></Seo>
       <div className="flex flex-col min-h-screen text-gray-800 bg-white">
         <Header></Header>
-        <main className="flex flex-col p-2 mb-auto my-container">{children}</main>
+        <main className="flex flex-col px-4 mb-auto my-container">{children}</main>
         <Footer></Footer>
       </div>
     </>
