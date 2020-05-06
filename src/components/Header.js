@@ -1,22 +1,14 @@
 import React from "react";
-import Socials from "../components/Socials";
-import { FaEnvelope } from "react-icons/fa";
-
-import data from "../data/personal.json";
+import { FaBars } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <header className="mb-4 shadow-lg bg-primary">
-      <div className="flex flex-wrap items-baseline p-2 my-container">
-        <h2 className="mb-0 mr-auto font-semibold tracking-wider text-gray-100">
-          Nannying Services
-        </h2>
-        <div className="flex text-xl text-gray-100">
-          <Socials></Socials>
-          <a href={`mailto:${data.email}`} className="font-normal">
-            <FaEnvelope></FaEnvelope>
-          </a>
-        </div>
+    <header className="mb-4 text-gray-100 shadow-lg bg-primary">
+      <div className="flex flex-wrap items-center p-2 my-container">
+        <button className="p-1 mr-2 border rounded flex-center">
+          <FaBars className="w-6 h-6"></FaBars>
+        </button>
+        <h2 className="mb-0">Annie Lesny</h2>
       </div>
     </header>
   );
