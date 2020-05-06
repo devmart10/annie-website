@@ -4,16 +4,16 @@ import { NextSeo } from "next-seo";
 const Seo = () => {
   return (
     <NextSeo
-      title="Tailwind Template"
-      description="Tailwind Template description"
+      title="Annie Lesny"
+      description="Annie Lesny description"
       canonical="https://devon-martin.now.sh/"
       openGraph={{
         url: "https://devon-martin.now.sh/",
         type: "website",
         locale: "en_IE",
-        title: "Tailwind Template",
-        description: "Tailwind Template description",
-        site_name: "Tailwind Template",
+        title: "Annie Lesny",
+        description: "Annie Lesny description",
+        site_name: "Annie Lesny",
       }}
       twitter={{
         handle: "@devmart10",

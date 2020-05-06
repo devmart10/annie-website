@@ -1,11 +1,10 @@
 import React from "react";
 
-const AboutMe = () => {
+const Pricing = () => {
   return (
-    <section id="about-me" className="wow">
+    <section id="pricing" className="wow">
       <div className="mb-4 bg-white card">
-        <h2 className="font-bold text-primary">About Me</h2>
-        <h4>Hello, and welcome!</h4>
+        <h2 className="font-bold text-primary">Pricing</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem impedit reiciendis eius totam nihil
           cum voluptate necessitatibus corporis, odio quod placeat? Culpa sapiente dolores pariatur dolorem atque magni
@@ -28,4 +27,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default Pricing;
