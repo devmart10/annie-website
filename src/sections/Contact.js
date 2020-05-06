@@ -5,7 +5,7 @@ import data from "../data/personal.json";
 
 const Contact = () => {
   return (
-    <section id="contact" className="wow fadeInUp">
+    <section id="contact" className="wow">
       <div className="mb-4 bg-white card">
         <h2 className="font-bold text-primary">Contact</h2>
         <div className="flex">
