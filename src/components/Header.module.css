@@ -1,0 +1,9 @@
+.wrapper .links {
+  max-height: 0;
+  transition: max-height 0.25s ease-in-out;
+  overflow: hidden;
+}
+
+.wrapper.expand .links {
+  max-height: 110px;
+}
