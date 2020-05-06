@@ -1,0 +1,16 @@
+/* Portfolio Components */
+.my-container {
+  @apply w-full;
+  @apply max-w-4xl;
+  @apply mx-auto;
+}
+
+.card {
+  @apply p-4 rounded-lg shadow-lg;
+}
+
+@screen md {
+  .card {
+    @apply p-8;
+  }
+}
