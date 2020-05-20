@@ -22,9 +22,7 @@ const Contact = () => {
             <a href={`tel:+1${data.phone}`} className="font-normal">
               {data.phone}
             </a>
-            <div className="mt-auto text-2xl">
-              <Socials></Socials>
-            </div>
+            <div className="mt-auto text-2xl">{/* <Socials></Socials> */}</div>
           </div>
         </div>
       </div>

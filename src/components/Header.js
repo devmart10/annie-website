@@ -3,6 +3,8 @@ import Link from "next/link";
 import { FaBars } from "react-icons/fa";
 import styles from "./Header.module.css";
 
+import data from "../data/personal.json";
+
 // TODO refactor the setExpanded(false) code
 // this might be address when refactoring SEO to be page specific
 
@@ -17,7 +19,7 @@ const Header = () => {
           </button>
           <Link href="/">
             <a className="text-3xl font-light hover:no-underline" onClick={() => setExpanded(false)}>
-              Annie Lesny
+              {data.full_name}
             </a>
           </Link>
         </div>
@@ -37,19 +39,26 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link href="/pricing">
+            <Link href="/tutoring">
               <a className="underline" onClick={() => setExpanded(false)}>
-                Pricing
+                Tutoring
               </a>
             </Link>
           </li>
           <li>
+            <Link href="/pricing">
+              <a className="underline" onClick={() => setExpanded(false)}>
+                Fees
+              </a>
+            </Link>
+          </li>
+          {/* <li>
             <Link href="/testimonials">
               <a className="underline" onClick={() => setExpanded(false)}>
                 Testimonials
               </a>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/contact">
               <a className="underline" onClick={() => setExpanded(false)}>
