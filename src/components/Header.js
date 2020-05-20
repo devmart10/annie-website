@@ -11,7 +11,7 @@ import data from "../data/personal.json";
 const Header = () => {
   const [expanded, setExpanded] = useState(false);
   return (
-    <header className="mb-4 text-gray-100 bg-primary">
+    <header className="mb-4 text-gray-100 shadow-lg bg-primary">
       <div className={`${styles.wrapper} px-4 py-2 my-container ${expanded && styles.expand}`}>
         <div className="flex items-center">
           <button className="p-1 mr-2 border rounded flex-center" onClick={() => setExpanded(e => !e)}>
