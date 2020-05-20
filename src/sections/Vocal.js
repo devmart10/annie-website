@@ -6,21 +6,16 @@ const Vocal = () => {
       <div className="mb-4 bg-white card">
         <h2 className="font-bold text-primary">Vocal Tutoring</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem impedit reiciendis eius totam nihil
-          cum voluptate necessitatibus corporis, odio quod placeat? Culpa sapiente dolores pariatur dolorem atque magni
-          accusamus voluptas.
+          Are you someone that’s excited or anxious about singing but have never gotten the support you’ve needed to
+          grow your inner and outer voice? Freeing your vocal chords can actually assist in reducing anxiety and
+          depression, and help to increase self-confidence. Working with your body to access your inner voice also helps
+          you access your inner resilience and creativity.
         </p>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, expedita odit. Provident voluptates totam,
-          sequi vitae possimus praesentium quaerat id adipisci commodi nam non officia quos ipsam quod, autem iste?
-          Iure, pariatur sapiente laborum repellat tenetur accusamus, ea reprehenderit earum quaerat minima velit
-          voluptatum maiores sequi. Quae cupiditate omnis distinctio, recusandae aperiam nihil quas dolores qui,
-          sapiente nostrum dolore ratione.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tenetur aliquam iure eveniet earum
-          explicabo, dolore deserunt, architecto corporis facere provident eaque autem repudiandae nisi accusantium
-          ratione facilis consequatur. Et.
+          I have been a singer since before I was born! I absolutely love singing and holding a space for clients to
+          grow and come into their unique vocal expression. I incorporate Psycho-Spiritual methodologies to enhance
+          self-confidence. The main key to singing from the Soul is accessing your inner truth from within, and freeing
+          your expression. We work on this lovingly.
         </p>
       </div>
     </section>

@@ -4,23 +4,23 @@ const Pricing = () => {
   return (
     <section id="pricing" className="wow">
       <div className="mb-4 bg-white card">
-        <h2 className="font-bold text-primary">Pricing</h2>
+        <h2 className="font-bold text-primary">Fees</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem impedit reiciendis eius totam nihil
-          cum voluptate necessitatibus corporis, odio quod placeat? Culpa sapiente dolores pariatur dolorem atque magni
-          accusamus voluptas.
+          <strong>Voice Lessons:</strong> $35 per hour for and some sliding scale slots available.
         </p>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, expedita odit. Provident voluptates totam,
-          sequi vitae possimus praesentium quaerat id adipisci commodi nam non officia quos ipsam quod, autem iste?
-          Iure, pariatur sapiente laborum repellat tenetur accusamus, ea reprehenderit earum quaerat minima velit
-          voluptatum maiores sequi. Quae cupiditate omnis distinctio, recusandae aperiam nihil quas dolores qui,
-          sapiente nostrum dolore ratione.
+          <strong>Tutoring:</strong> $25 per hour and some sliding scale slots available.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tenetur aliquam iure eveniet earum
-          explicabo, dolore deserunt, architecto corporis facere provident eaque autem repudiandae nisi accusantium
-          ratione facilis consequatur. Et.
+          <strong>Nannying and Babysitting:</strong> $22 per hour and some sliding scale slots available.
+        </p>
+        <h2 className="my-4 font-bold text-primary">Consultation</h2>
+        <p>I offer a free 20- minute consultation.</p>
+        <h2 className="my-4 font-bold text-primary">Forms</h2>
+        <p>
+          Contract to read and sign and send back before the first session please. No obligation for a certain period of
+          time, just understanding of what services entail. Clients do find that at least 3-4 months of practices are
+          helpful.
         </p>
       </div>
     </section>
