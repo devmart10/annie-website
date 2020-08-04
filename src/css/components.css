@@ -1,8 +1,8 @@
 /* Portfolio Components */
 .my-container {
   @apply w-full;
-  @apply max-w-4xl;
   @apply mx-auto;
+  max-width: 1200px;
 }
 
 .card {
