@@ -1,4 +1,4 @@
-.wrapper .links {
+/* .wrapper .links {
   max-height: 0;
   transition: max-height 0.25s ease-in-out;
   overflow: hidden;
@@ -6,4 +6,8 @@
 
 .wrapper.expand .links {
   max-height: 140px;
+} */
+
+.bg {
+  background-image: linear-gradient(to right, #9c55a3 20%, #edf3d0);
 }

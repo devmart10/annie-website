@@ -8,63 +8,63 @@ import data from "../data/personal.json";
 // TODO refactor the setExpanded(false) code
 // this might be address when refactoring SEO to be page specific
 
+const linkArray = [
+  {
+    link: "/tutoring",
+    title: "Tutoring",
+  },
+  {
+    link: "/nanny",
+    title: "Nannying",
+  },
+  {
+    link: "/vocal-coach",
+    title: "Vocal Coaching",
+  },
+  {
+    link: "/pricing",
+    title: "Pricing",
+  },
+  //   {
+  //     link: "/testimonials",
+  //     title: "Testimonials",
+  //   },
+  {
+    link: "/contact",
+    title: "Contact",
+  },
+];
+
+const Links = () => (
+  <>
+    <ul
+      className={`${styles.links} px-4 sm:px-8 py-2 flex flex-wrap text-primary sm:text-lg sm:justify-between items-center my-container`}
+    >
+      {linkArray.map(({ link, title }) => (
+        <Link as="li" href={link}>
+          <a className="mr-4 sm:mr-0">{title}</a>
+        </Link>
+      ))}
+    </ul>
+  </>
+);
+
 const Header = () => {
   const [expanded, setExpanded] = useState(false);
   return (
-    <header className="mb-4 text-gray-100 shadow-lg bg-primary">
-      <div className={`${styles.wrapper} px-4 py-2 my-container ${expanded && styles.expand}`}>
-        <div className="flex items-center">
-          <Link href="/">
-            <a className="text-3xl font-light hover:no-underline" onClick={() => setExpanded(false)}>
-              {data.full_name}
-            </a>
-          </Link>
+    <header className="mb-4">
+      <div className={`text-gray-100 shadow-lg ${styles.bg}`}>
+        <div className={`${styles.wrapper} px-4 py-2 my-container  ${expanded && styles.expand}`}>
+          <div className="flex items-center">
+            <Link href="/">
+              <a className="text-3xl font-normal hover:no-underline" onClick={() => setExpanded(false)}>
+                {data.full_name}
+              </a>
+            </Link>
+          </div>
         </div>
-        <ul className={`${styles.links}`}>
-          <li>
-            <Link href="/nanny">
-              <a className="underline" onClick={() => setExpanded(false)}>
-                Nannying
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/vocal-coach">
-              <a className="underline" onClick={() => setExpanded(false)}>
-                Vocal Coaching
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/tutoring">
-              <a className="underline" onClick={() => setExpanded(false)}>
-                Tutoring
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/pricing">
-              <a className="underline" onClick={() => setExpanded(false)}>
-                Fees
-              </a>
-            </Link>
-          </li>
-          {/* <li>
-            <Link href="/testimonials">
-              <a className="underline" onClick={() => setExpanded(false)}>
-                Testimonials
-              </a>
-            </Link>
-          </li> */}
-          <li>
-            <Link href="/contact">
-              <a className="underline" onClick={() => setExpanded(false)}>
-                Contact
-              </a>
-            </Link>
-          </li>
-        </ul>
       </div>
+      <Links></Links>
     </header>
   );
 };
