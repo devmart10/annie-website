@@ -14,9 +14,6 @@ const Header = () => {
     <header className="mb-4 text-gray-100 shadow-lg bg-primary">
       <div className={`${styles.wrapper} px-4 py-2 my-container ${expanded && styles.expand}`}>
         <div className="flex items-center">
-          <button className="p-1 mr-2 border rounded flex-center" onClick={() => setExpanded(e => !e)}>
-            <FaBars className="w-6 h-6"></FaBars>
-          </button>
           <Link href="/">
             <a className="text-3xl font-light hover:no-underline" onClick={() => setExpanded(false)}>
               {data.full_name}

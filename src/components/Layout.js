@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Seo></Seo>
-      <div className="flex flex-col min-h-screen text-gray-800 bg-white">
+      <div className="flex flex-col min-h-screen text-gray-800 bg-gray-100">
         <Header></Header>
         <main className="flex flex-col px-4 mb-auto my-container">{children}</main>
         <Footer></Footer>
