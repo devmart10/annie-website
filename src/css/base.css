@@ -47,6 +47,17 @@ p {
   @apply pb-4 leading-relaxed;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+  @apply tracking-wide;
+}
+
 .flex-center {
   @apply flex items-center justify-center;
 }
