@@ -38,11 +38,11 @@ const linkArray = [
 const Links = () => (
   <>
     <ul
-      className={`${styles.links} px-4 sm:px-8 py-2 flex flex-wrap text-primary sm:text-lg sm:justify-between items-center my-container`}
+      className={`${styles.links} px-4 sm:px-8 py-4 flex flex-wrap text-primary sm:text-lg sm:justify-between items-center my-container`}
     >
       {linkArray.map(({ link, title }) => (
         <Link as="li" href={link}>
-          <a className="mr-4 sm:mr-0">{title}</a>
+          <a className={`mr-4 sm:mr-0 hover:no-underline ${styles["header-link"]}`}>{title}</a>
         </Link>
       ))}
     </ul>
@@ -54,7 +54,7 @@ const Header = () => {
   return (
     <header className="mb-4">
       <div className={`text-gray-100 shadow-lg ${styles.bg}`}>
-        <div className={`${styles.wrapper} px-4 py-2 my-container  ${expanded && styles.expand}`}>
+        <div className={`${styles.wrapper} px-4 py-4 my-container  ${expanded && styles.expand}`}>
           <div className="flex items-center">
             <Link href="/">
               <a className="text-3xl font-normal hover:no-underline" onClick={() => setExpanded(false)}>

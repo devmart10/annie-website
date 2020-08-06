@@ -11,3 +11,11 @@
 .bg {
   background-image: linear-gradient(to right, #9c55a3 20%, #edf3d0);
 }
+
+.header-link {
+  transition: all 0.3s ease-in-out;
+}
+
+.header-link:hover {
+  transform: scale3d(1.2, 1.2, 1.2);
+}
