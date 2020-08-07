@@ -44,7 +44,7 @@ a:hover {
 }
 
 p {
-  @apply pb-4 leading-relaxed;
+  @apply pb-4 text-lg leading-loose;
 }
 
 h1,
