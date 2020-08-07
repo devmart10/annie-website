@@ -58,7 +58,7 @@ const Header = () => {
           <div className="flex items-center">
             <Link href="/">
               <a className="text-3xl font-normal hover:no-underline" onClick={() => setExpanded(false)}>
-                {data.full_name}
+                Soul-Centered Services
               </a>
             </Link>
           </div>
