@@ -41,7 +41,7 @@ const Links = () => (
       className={`${styles.links} px-4 sm:px-8 py-4 flex flex-wrap text-primary sm:text-lg sm:justify-between items-center my-container`}
     >
       {linkArray.map(({ link, title }) => (
-        <Link as="li" href={link}>
+        <Link as="li" href={link} key={link}>
           <a className={`mr-4 sm:mr-0 hover:no-underline ${styles["header-link"]}`}>{title}</a>
         </Link>
       ))}
