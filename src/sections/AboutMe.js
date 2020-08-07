@@ -3,7 +3,7 @@ import React from "react";
 const AboutMe = () => {
   return (
     <section id="about-me" className="wow">
-      <div className="mb-4 bg-white card">
+      <div className="mb-4 section">
         <h2 className="font-bold text-primary">About Annie</h2>
         <div className="flex items-center">
           <img src="/image1.jpg" alt="Profile" className="w-32 h-auto mr-4 rounded-lg shadow-lg md:mr-8 md:w-64" />

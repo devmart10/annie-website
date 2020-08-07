@@ -3,7 +3,7 @@ import React from "react";
 const Tutoring = () => {
   return (
     <section id="tutoring" className="wow">
-      <div className="mb-4 bg-white card">
+      <div className="mb-4 section">
         <h2 className="font-bold text-primary">Tutoring</h2>
         <p>
           Are you and/ or your children feeling overwhelmed by schoolwork? Is it affecting your relationship and making

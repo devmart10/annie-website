@@ -3,7 +3,7 @@ import React from "react";
 const Pricing = () => {
   return (
     <section id="pricing" className="wow">
-      <div className="mb-4 bg-white card">
+      <div className="mb-4 section">
         <h2 className="font-bold text-primary">Fees</h2>
         <p>
           <strong>Voice Lessons:</strong> $35 per hour for and some sliding scale slots available.
