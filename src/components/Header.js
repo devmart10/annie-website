@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import { FaBars } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import styles from "./Header.module.css";
 
 import data from "../data/personal.json";
@@ -55,11 +55,20 @@ const Header = () => {
     <header className="mb-4">
       <div className={`text-gray-100 shadow-lg ${styles.bg}`}>
         <div className={`${styles.wrapper} px-4 py-4 my-container  ${expanded && styles.expand}`}>
-          <div className="flex items-center">
+          <div className="flex items-center justify-between">
             <Link href="/">
               <a className="text-3xl font-normal text-fancy hover:no-underline" onClick={() => setExpanded(false)}>
                 Soul-Centered Services
               </a>
+            </Link>
+
+            <Link href="#">
+              <div className="flex items-center p-4 rounded-full bg-b-faded-purple">
+                <a className="mr-2 font-normal hover:no-underline" onClick={() => setExpanded(false)}>
+                  Schedule a consultation
+                </a>
+                <FaArrowRight></FaArrowRight>
+              </div>
             </Link>
           </div>
         </div>
