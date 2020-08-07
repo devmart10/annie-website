@@ -57,7 +57,7 @@ const Header = () => {
         <div className={`${styles.wrapper} px-4 py-4 my-container  ${expanded && styles.expand}`}>
           <div className="flex items-center">
             <Link href="/">
-              <a className="text-3xl font-normal hover:no-underline" onClick={() => setExpanded(false)}>
+              <a className="text-3xl font-normal text-fancy hover:no-underline" onClick={() => setExpanded(false)}>
                 Soul-Centered Services
               </a>
             </Link>
