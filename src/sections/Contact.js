@@ -7,7 +7,7 @@ import data from "../data/personal.json";
 const Contact = () => {
   return (
     <section id="contact" className="wow">
-      <div className="mb-4 bg-white card">
+      <div className="mb-4 section">
         <h2 className="font-bold text-primary">Contact</h2>
         <div className="flex">
           <img src="/image1_square.jpg" alt="Profile" className="w-32 h-32 mr-4 rounded-full" />

@@ -3,7 +3,7 @@ import React from "react";
 const Vocal = () => {
   return (
     <section id="vocal" className="wow">
-      <div className="mb-4 bg-white card">
+      <div className="mb-4 section">
         <h2 className="font-bold text-primary">Vocal Tutoring</h2>
         <p>
           Are you someone that’s excited or anxious about singing but have never gotten the support you’ve needed to

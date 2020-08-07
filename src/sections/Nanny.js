@@ -3,7 +3,7 @@ import React from "react";
 const Nanny = () => {
   return (
     <section id="nanny" className="wow">
-      <div className="mb-4 bg-white card">
+      <div className="mb-4 section">
         <h2 className="font-bold text-primary">Nannying</h2>
         <p>
           Are you feeling overwhelmed and noticing that your child or children are needing more support? Most parents

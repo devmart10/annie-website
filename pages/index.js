@@ -9,7 +9,6 @@ const Index = () => {
     <>
       <Hero></Hero>
       <AboutMe></AboutMe>
-      <Contact></Contact>
     </>
   );
 };
