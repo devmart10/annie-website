@@ -37,12 +37,12 @@ const Links = () => (
   <>
     <ul className={`${styles.links} px-0 sm:px-0 py-0 flex flex-wrap text-primary sm:text-lg sm:justify-between items-center my-container`}>
       {linkArray.map(({ link, title }, i) => (
-        <>
-          <Link href={link} key={link}>
+        <div key={link}>
+          <Link href={link}>
             <a className={`mr-4 sm:mr-8 tracking-wide hover:no-underline font-light text-b-yellow ${styles['header-link']}`}>{title}</a>
           </Link>
           {i !== linkArray.length - 1 && <span className='mr-4 font-light tracking-wide sm:mr-8 hover:no-underline text-b-yellow'>|</span>}
-        </>
+        </div>
       ))}
     </ul>
   </>
