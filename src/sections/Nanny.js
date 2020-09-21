@@ -65,14 +65,22 @@ const Nanny = () => {
       <section id='nanny-testimonials' className='wow'>
         <div className='mb-8 md:mb-16 section'>
           <h2 className='font-bold text-primary'>Testimonials (References Available)</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas earum quos facilis nisi beatae dignissimos harum voluptatum aut natus minima aliquam, iste deleniti veritatis distinctio
-            debitis atque non at temporibus quidem necessitatibus odio nesciunt? Reprehenderit veritatis ducimus fuga est voluptatum.
-          </p>
-          <p>
-            I value and appreciate the time I spend tutoring anyone and everyone. I have advanced skills in courses ranging from Math to English to Social Studies and Science. Allowing your child to
-            feel safe as we go into subjects that are challenging for them is so important. I attune to their needs and hold a kind and loving space for growth, learning, and study skills.
-          </p>
+          <ul className='pl-4 list-disc'>
+            <li>
+              <p>
+                Annie has been an amazing asset to our family. From the minute she entered our home, we had every confidence she would have no trouble wrangling our 3 children, with both kindness and
+                the structure and boundaries children need. She is self-assured, and competent. And FUN! She brings music and play and joy in her bag of “tricks.” Our children count the sleeps until
+                her return. I would recommend her 100% <span className='italic'>~ Emily G.</span>
+              </p>
+            </li>
+            <li>
+              <p>
+                Annie is everything we hope for in a nanny: great with the kids, reliable, dependable, and communicative. Annie was our after-school nanny when our children were five and eight years
+                old. We trusted her to drive our children to their various activities, take them to the pool, and explore local parks. The kids loved their time with Annie; we were all sad to wish her
+                farewell when she moved away for graduate school. All of us appreciated her positive energy, can-do attitude, and big heart. <span className='italic'>~Lina D.</span>
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
     </>
