@@ -12,7 +12,7 @@ const linkArray = [
     title: 'Tutoring',
   },
   {
-    link: '/nanny',
+    link: '/nannying',
     title: 'Nannying',
   },
   {
