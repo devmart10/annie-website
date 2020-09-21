@@ -16,8 +16,8 @@ const linkArray = [
     title: 'Nannying',
   },
   {
-    link: '/vocal-coach',
-    title: 'Voice Lessons',
+    link: '/singing-lessons',
+    title: 'Singing Lessons',
   },
   // {
   //   link: '/pricing',
