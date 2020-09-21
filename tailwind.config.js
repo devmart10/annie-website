@@ -8,7 +8,7 @@ module.exports = {
         'b-purple': '#9c55a3',
         'b-yellow': '#edf3d0',
         'b-faded-purple': '#a5879f',
-        'b-dark-purple': '#773277',
+        'b-dark-purple': 'hsl(300 35% 31% / 1)',
       },
     },
   },
