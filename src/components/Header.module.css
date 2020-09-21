@@ -19,3 +19,12 @@
 .header-link:hover {
   transform: scale3d(1.2, 1.2, 1.2);
 }
+
+.navbar {
+  top: 0px;
+  transition: top 0.6s;
+}
+
+.navbarHidden {
+  top: -92px;
+}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
 import styles from './Header.module.css';
@@ -50,8 +50,33 @@ const Links = () => (
 
 const Header = () => {
   const [expanded, setExpanded] = useState(false);
+  const [stickyState, setStickyState] = useState({
+    prevScrollpos: 0,
+    visible: true,
+  });
+
+  // Hide or show the menu.
+  const handleScroll = () => {
+    const { prevScrollpos } = stickyState;
+
+    const currentScrollPos = window.pageYOffset;
+    const visible = prevScrollpos > currentScrollPos;
+
+    setStickyState({
+      prevScrollpos: currentScrollPos,
+      visible,
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [stickyState]);
+
   return (
-    <header className='fixed z-50 w-full mb-4'>
+    <header className={`fixed z-50 w-full mb-4 ${styles.navbar} ${!stickyState.visible && styles.navbarHidden}`}>
       <div className={`text-gray-100 shadow-lg ${styles.bg}`}>
         <div className={`${styles.wrapper} px-4 py-4 my-container  ${expanded && styles.expand}`}>
           <div className='flex items-center'>
@@ -79,3 +104,56 @@ const Header = () => {
 };
 
 export default Header;
+
+/**
+ * import React, { Component } from "react";
+import classnames from "classnames";
+
+export default class Navbar extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      prevScrollpos: window.pageYOffset,
+      visible: true
+    };
+  }
+
+  // Adds an event listener when the component is mount.
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  // Remove the event listener when the component is unmount.
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+
+  // Hide or show the menu.
+  handleScroll = () => {
+    const { prevScrollpos } = this.state;
+
+    const currentScrollPos = window.pageYOffset;
+    const visible = prevScrollpos > currentScrollPos;
+
+    this.setState({
+      prevScrollpos: currentScrollPos,
+      visible
+    });
+  };
+
+  render() {
+    return (
+      <nav
+        className={classnames("navbar", {
+          "navbar--hidden": !this.state.visible
+        })}
+      >
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+      </nav>
+    );
+  }
+}
+ */
