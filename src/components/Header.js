@@ -51,7 +51,7 @@ const Links = () => (
 const Header = () => {
   const [expanded, setExpanded] = useState(false);
   return (
-    <header className='mb-4'>
+    <header className='fixed z-50 w-full mb-4'>
       <div className={`text-gray-100 shadow-lg ${styles.bg}`}>
         <div className={`${styles.wrapper} px-4 py-4 my-container  ${expanded && styles.expand}`}>
           <div className='flex items-center'>

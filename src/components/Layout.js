@@ -1,21 +1,21 @@
-import React, { useEffect } from "react";
-import Header from "./Header";
-import Footer from "./Footer";
-import Seo from "./Seo";
+import React, { useEffect } from 'react';
+import Header from './Header';
+import Footer from './Footer';
+import Seo from './Seo';
 
 const Layout = ({ children }) => {
   useEffect(() => {
     if (typeof window !== `undefined`) {
-      const WOW = require("wowjs");
+      const WOW = require('wowjs');
       new WOW.WOW({ live: false, mobile: true }).init();
     }
   }, []);
   return (
     <>
       <Seo></Seo>
-      <div className="flex flex-col min-h-screen text-gray-800 bg-gray-100">
+      <div className='flex flex-col min-h-screen text-gray-800 bg-gray-100'>
         <Header></Header>
-        <main className="flex flex-col px-4 mb-auto my-container">{children}</main>
+        <main className='flex flex-col px-4 mt-32 mb-auto my-container'>{children}</main>
         <Footer></Footer>
       </div>
     </>
