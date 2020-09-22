@@ -23,8 +23,8 @@ const Tutoring = () => {
         <div className='mb-8 md:mb-16 section'>
           <h2 className='font-bold text-primary'>Schedule a Consultation</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas earum quos facilis nisi beatae dignissimos harum voluptatum aut natus minima aliquam, iste deleniti veritatis distinctio
-            debitis atque non at temporibus quidem necessitatibus odio nesciunt? Reprehenderit veritatis ducimus fuga est voluptatum. I offer a free 20- minute consultation.
+            To find out more about my services, I offer a free 20-minute consultation. I'm flexible with scheduling and am confident working with all kinds of people. Click the link and it will
+            redirect you to a Google Form, where you can provide your contact details. I will reach out to you within 3 days to set up our consultation. I look forward to hearing from you!
           </p>
           <Link href='#'>
             <div className='inline-flex items-center p-4 text-white rounded-full bg-b-purple'>
