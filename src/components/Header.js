@@ -35,7 +35,7 @@ const linkArray = [
 
 const Links = () => (
   <>
-    <ul className={`${styles.links} px-0 sm:px-0 py-0 flex flex-wrap text-primary sm:text-lg sm:justify-between items-center my-container`}>
+    <ul className={`${styles.links} px-0 sm:px-0 py-0 flex flex-wrap sm:text-lg sm:justify-between items-center my-container`}>
       {linkArray.map(({ link, title }, i) => (
         <div key={link}>
           <Link href={link}>

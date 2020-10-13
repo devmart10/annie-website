@@ -7,7 +7,7 @@ const Nanny = () => {
     <>
       <section id='nanny-description' className='wow'>
         <div className='mb-8 md:mb-16 section'>
-          <h1 className='font-bold text-primary'>Nannying</h1>
+          <h1 className='font-bold text-b-yellow'>Nannying</h1>
           <p>
             Are you feeling overwhelmed and noticing that your child or children are needing more support? Most parents and children need extra support. I can provide the support and co-regulation
             that children need to feel safe and to be able to learn to be more cooperative and grow. When the body feels safe, the brain comes on line and can think more clearly! This is helpful for
@@ -26,7 +26,7 @@ const Nanny = () => {
 
       <section id='nanny-schedule' className='wow'>
         <div className='mb-8 md:mb-16 section'>
-          <h2 className='font-bold text-primary'>Schedule a Consultation</h2>
+          <h2 className='font-bold text-b-yellow'>Schedule a Consultation</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas earum quos facilis nisi beatae dignissimos harum voluptatum aut natus minima aliquam, iste deleniti veritatis distinctio
             debitis atque non at temporibus quidem necessitatibus odio nesciunt? Reprehenderit veritatis ducimus fuga est voluptatum. I offer a free 20- minute consultation.
@@ -44,14 +44,14 @@ const Nanny = () => {
 
       <section id='nanny-pricing' className='wow'>
         <div className='mb-8 md:mb-16 section'>
-          <h2 className='font-bold text-primary'>Pricing</h2>
+          <h2 className='font-bold text-b-yellow'>Pricing</h2>
           <p>$25 per hour and some sliding scale slots available.</p>
         </div>
       </section>
 
       <section id='nanny-forms' className='wow'>
         <div className='mb-8 md:mb-16 section'>
-          <h2 className='font-bold text-primary'>Forms</h2>
+          <h2 className='font-bold text-b-yellow'>Forms</h2>
           <p>
             Contract to read and sign and send back before the first session please. No obligation for a certain period of time, just understanding of what services entail. Clients do find that at
             least 3-4 months of practices are helpful.
@@ -64,7 +64,7 @@ const Nanny = () => {
 
       <section id='nanny-testimonials' className='wow'>
         <div className='mb-8 md:mb-16 section'>
-          <h2 className='font-bold text-primary'>Testimonials (References Available)</h2>
+          <h2 className='font-bold text-b-yellow'>Testimonials (References Available)</h2>
           <ul className='pl-4 list-disc'>
             <li>
               <p>

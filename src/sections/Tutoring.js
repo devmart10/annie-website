@@ -7,7 +7,7 @@ const Tutoring = () => {
     <>
       <section id='tutoring-description' className='wow'>
         <div className='mb-8 md:mb-16 section'>
-          <h1 className='font-bold text-primary'>Tutoring</h1>
+          <h1 className='font-bold text-b-yellow'>Tutoring</h1>
           <p>
             Are you and/ or your children feeling overwhelmed by schoolwork? Is it affecting your relationship and making things extra difficult? Most children and parents need extra support. When we
             feel supported, we’re able to feel calmer and more resilient. The brain then comes online to be able to learn more.
@@ -21,7 +21,7 @@ const Tutoring = () => {
 
       <section id='tutoring-schedule' className='wow'>
         <div className='mb-8 md:mb-16 section'>
-          <h2 className='font-bold text-primary'>Schedule a Consultation</h2>
+          <h2 className='font-bold text-b-yellow'>Schedule a Consultation</h2>
           <p>
             To find out more about my services, I offer a free 20-minute consultation. I'm flexible with scheduling and am confident working with all kinds of people. Click the link and it will
             redirect you to a Google Form, where you can provide your contact details. I will reach out to you within 3 days to set up our consultation. I look forward to hearing from you!
@@ -39,14 +39,14 @@ const Tutoring = () => {
 
       <section id='tutoring-pricing' className='wow'>
         <div className='mb-8 md:mb-16 section'>
-          <h2 className='font-bold text-primary'>Pricing</h2>
+          <h2 className='font-bold text-b-yellow'>Pricing</h2>
           <p>$25 per hour and some sliding scale slots available.</p>
         </div>
       </section>
 
       <section id='tutoring-forms' className='wow'>
         <div className='mb-8 md:mb-16 section'>
-          <h2 className='font-bold text-primary'>Forms</h2>
+          <h2 className='font-bold text-b-yellow'>Forms</h2>
           <p>
             Contract to read and sign and send back before the first session please. No obligation for a certain period of time, just understanding of what services entail. Clients do find that at
             least 3-4 months of practices are helpful.
@@ -59,7 +59,7 @@ const Tutoring = () => {
 
       <section id='tutoring-testimonials' className='wow'>
         <div className='mb-8 md:mb-16 section'>
-          <h2 className='font-bold text-primary'>Testimonials (References Available)</h2>
+          <h2 className='font-bold text-b-yellow'>Testimonials (References Available)</h2>
           <ul className='pl-4 list-disc'>
             <li>
               <p>
