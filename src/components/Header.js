@@ -89,9 +89,9 @@ const Header = () => {
               <Links></Links>
             </div>
             <Link href='#'>
-              <div className='flex items-center p-4 ml-auto rounded-full bg-b-faded-purple'>
+              <div className='flex items-center p-4 ml-auto rounded-full bg-b-purple md:bg-b-faded-purple'>
                 <a className='mr-2 font-normal hover:no-underline' onClick={() => setExpanded(false)}>
-                  Schedule a consultation
+                  Book a consultation
                 </a>
                 <FaArrowRight></FaArrowRight>
               </div>

@@ -6,7 +6,7 @@ const AboutMe = () => {
       <div className='mb-4 section'>
         <h2 className='font-bold text-b-yellow'>About Annie</h2>
         <div className='flex items-center'>
-          <img src='/image1.jpg' alt='Profile' className='w-32 h-auto mr-4 rounded-lg shadow-lg md:mr-8 md:w-64' />
+          <img src='/image1.jpg' alt='Profile' className='hidden w-32 h-auto mr-4 rounded-lg shadow-lg md:block md:mr-8 md:w-64' />
           <div>
             <p className=''>
               Hi there! My name is Annie Lesny. I am a loving, hard-working, and dedicated individual seeking to facilitate a space for you and/or your family’s needs! I am currently a Masters student

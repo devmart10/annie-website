@@ -21,15 +21,15 @@ const Vocal = () => {
 
       <section id='singing-schedule' className='wow'>
         <div className='mb-8 md:mb-16 section'>
-          <h2 className='font-bold text-b-yellow'>Schedule a Consultation</h2>
+          <h2 className='font-bold text-b-yellow'>Book a consultation</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas earum quos facilis nisi beatae dignissimos harum voluptatum aut natus minima aliquam, iste deleniti veritatis distinctio
-            debitis atque non at temporibus quidem necessitatibus odio nesciunt? Reprehenderit veritatis ducimus fuga est voluptatum. I offer a free 20- minute consultation.
+            To find out more about my services, I offer a free 20-minute consultation. I'm flexible with scheduling and am confident working with all kinds of people. Click the link and it will
+            redirect you to a Google Form, where you can provide your contact details. I will reach out to you within 3 days to set up our consultation. I look forward to hearing from you!
           </p>
           <Link href='#'>
             <div className='inline-flex items-center p-4 text-white rounded-full bg-b-purple'>
               <a className='mr-2 font-normal hover:no-underline' onClick={() => setExpanded(false)}>
-                Schedule a consultation
+                Book a consultation
               </a>
               <FaArrowRight></FaArrowRight>
             </div>
@@ -63,15 +63,15 @@ const Vocal = () => {
           <ul className='pl-4 list-disc'>
             <li>
               <p>
-                Annie is a very thoughtful and understanding voice instructor. I have never taken voice lessons before, but she went at a good pace, pushing me to get better, but always making me feel
-                comfortable. I have been surprised at my progress over the past few weeks, and I’m very grateful that I found her to work with me. <span className='italic'>~Zac P.</span>
+                "Annie is a very thoughtful and understanding voice instructor. I have never taken voice lessons before, but she went at a good pace, pushing me to get better, but always making me
+                feel comfortable. I have been surprised at my progress over the past few weeks, and I’m very grateful that I found her to work with me." <span className='italic'>~Zac P.</span>
               </p>
             </li>
             <li>
               <p>
-                Annie is one of a kind. Learning with Annie helped me to unlearn past notions that were no longer serving me in order to truly express my voice. Annie is always professional and
+                "Annie is one of a kind. Learning with Annie helped me to unlearn past notions that were no longer serving me in order to truly express my voice. Annie is always professional and
                 understanding. Every time I meet with Annie I feel she has learned new things to better herself and her teachings. Interactions with Annie guarantee growth & inspire wonder. I highly
-                recommend Annie as a teacher, coach, nanny, and friend. <span className='italic'>~Maggie M.</span>
+                recommend Annie as a teacher, coach, nanny, and friend. "<span className='italic'>~Maggie M.</span>
               </p>
             </li>
           </ul>

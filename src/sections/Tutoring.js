@@ -21,7 +21,7 @@ const Tutoring = () => {
 
       <section id='tutoring-schedule' className='wow'>
         <div className='mb-8 md:mb-16 section'>
-          <h2 className='font-bold text-b-yellow'>Schedule a Consultation</h2>
+          <h2 className='font-bold text-b-yellow'>Book a consultation</h2>
           <p>
             To find out more about my services, I offer a free 20-minute consultation. I'm flexible with scheduling and am confident working with all kinds of people. Click the link and it will
             redirect you to a Google Form, where you can provide your contact details. I will reach out to you within 3 days to set up our consultation. I look forward to hearing from you!
@@ -29,7 +29,7 @@ const Tutoring = () => {
           <Link href='#'>
             <div className='inline-flex items-center p-4 text-white rounded-full bg-b-purple'>
               <a className='mr-2 font-normal hover:no-underline' onClick={() => setExpanded(false)}>
-                Schedule a consultation
+                Book a consultation
               </a>
               <FaArrowRight></FaArrowRight>
             </div>
@@ -52,7 +52,7 @@ const Tutoring = () => {
             least 3-4 months of practices are helpful.
           </p>
           <li>
-            <a href='#'>Singing Lessons Contract</a>
+            <a href='#'>Tutoring Contract</a>
           </li>
         </div>
       </section>
@@ -63,9 +63,9 @@ const Tutoring = () => {
           <ul className='pl-4 list-disc'>
             <li>
               <p>
-                One of my biggest struggles was being able to help my daughter Bianca with her studies. When I found Annie was willing to meet with my daughter and tutor her, I was open to the idea.
+                "One of my biggest struggles was being able to help my daughter Bianca with her studies. When I found Annie was willing to meet with my daughter and tutor her, I was open to the idea.
                 My daughter was behind in her school work and was finding it frustrating to catch up and maintain with her studies. Annie’s patience and approach with Bianca in her tutoring made a
-                huge impact with a very successful outcome. I would definitely recommend Annie Lesny and am glad to say that we are continuing to use her service for Bianca’s sophomore school year.
+                huge impact with a very successful outcome. I would definitely recommend Annie Lesny and am glad to say that we are continuing to use her service for Bianca’s sophomore school year."
                 <span className='italic'> ~Reynaldo G.</span>
               </p>
             </li>

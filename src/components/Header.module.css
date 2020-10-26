@@ -8,8 +8,13 @@
   max-height: 140px;
 } */
 
+@media (min-width: 768px) {
+  .bg {
+    background-image: linear-gradient(to right, #803c80 40%, #edf3d0);
+  }
+}
 .bg {
-  background-image: linear-gradient(to right, #803c80 20%, #edf3d0);
+  background-color: #803c80;
 }
 
 .header-link {

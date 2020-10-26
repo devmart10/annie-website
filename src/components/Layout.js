@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Head from 'next/head';
 import Header from './Header';
 import Footer from './Footer';
 import Seo from './Seo';
@@ -15,7 +16,7 @@ const Vine = () => (
     // className='w-1/4 h-full'
   >
     <metadata>Created by potrace 1.15, written by Peter Selinger 2001-2017</metadata>
-    <g transform='translate(-300.000000,-200.000000) scale(0.1500000,-0.1500000) rotate(-90)' fill='#009900' stroke='none'>
+    <g transform='translate(-300.000000,-200.000000) scale(0.1500000,-0.1500000) rotate(-90)' fill='#568259' stroke='none'>
       <path
         d='M4991 4825 c-195 -141 -502 -436 -624 -597 -117 -157 -176 -305 -179
 -454 -2 -79 19 -135 72 -191 l31 -32 -49 -103 c-27 -57 -62 -136 -78 -175
@@ -84,9 +85,12 @@ const Layout = ({ children }) => {
   return (
     <>
       <Seo></Seo>
+      <Head>
+        <link rel='shortcut icon' href='/favicon.png' />
+      </Head>
       <div className='relative flex flex-col min-h-screen text-gray-100 bg-b-dark-purple'>
         <Header></Header>
-        <div className='absolute inset-0'>
+        <div className='absolute inset-0 hidden md:block'>
           <Vine></Vine>
         </div>
         <main className='z-10 flex flex-col px-4 mt-32 mb-auto my-container'>{children}</main>

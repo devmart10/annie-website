@@ -26,15 +26,15 @@ const Nanny = () => {
 
       <section id='nanny-schedule' className='wow'>
         <div className='mb-8 md:mb-16 section'>
-          <h2 className='font-bold text-b-yellow'>Schedule a Consultation</h2>
+          <h2 className='font-bold text-b-yellow'>Book a consultation</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas earum quos facilis nisi beatae dignissimos harum voluptatum aut natus minima aliquam, iste deleniti veritatis distinctio
-            debitis atque non at temporibus quidem necessitatibus odio nesciunt? Reprehenderit veritatis ducimus fuga est voluptatum. I offer a free 20- minute consultation.
+            To find out more about my services, I offer a free 20-minute consultation. I'm flexible with scheduling and am confident working with all kinds of people. Click the link and it will
+            redirect you to a Google Form, where you can provide your contact details. I will reach out to you within 3 days to set up our consultation. I look forward to hearing from you!
           </p>
           <Link href='#'>
             <div className='inline-flex items-center p-4 text-white rounded-full bg-b-purple'>
               <a className='mr-2 font-normal hover:no-underline' onClick={() => setExpanded(false)}>
-                Schedule a consultation
+                Book a consultation
               </a>
               <FaArrowRight></FaArrowRight>
             </div>
@@ -57,7 +57,7 @@ const Nanny = () => {
             least 3-4 months of practices are helpful.
           </p>
           <li>
-            <a href='#'>Singing Lessons Contract</a>
+            <a href='#'>Nannying Contract</a>
           </li>
         </div>
       </section>
@@ -68,16 +68,16 @@ const Nanny = () => {
           <ul className='pl-4 list-disc'>
             <li>
               <p>
-                Annie has been an amazing asset to our family. From the minute she entered our home, we had every confidence she would have no trouble wrangling our 3 children, with both kindness and
+                "Annie has been an amazing asset to our family. From the minute she entered our home, we had every confidence she would have no trouble wrangling our 3 children, with both kindness and
                 the structure and boundaries children need. She is self-assured, and competent. And FUN! She brings music and play and joy in her bag of “tricks.” Our children count the sleeps until
-                her return. I would recommend her 100% <span className='italic'>~ Emily G.</span>
+                her return. I would recommend her 100%" <span className='italic'>~ Emily G.</span>
               </p>
             </li>
             <li>
               <p>
-                Annie is everything we hope for in a nanny: great with the kids, reliable, dependable, and communicative. Annie was our after-school nanny when our children were five and eight years
+                "Annie is everything we hope for in a nanny: great with the kids, reliable, dependable, and communicative. Annie was our after-school nanny when our children were five and eight years
                 old. We trusted her to drive our children to their various activities, take them to the pool, and explore local parks. The kids loved their time with Annie; we were all sad to wish her
-                farewell when she moved away for graduate school. All of us appreciated her positive energy, can-do attitude, and big heart. <span className='italic'>~Lina D.</span>
+                farewell when she moved away for graduate school. All of us appreciated her positive energy, can-do attitude, and big heart." <span className='italic'>~Lina D.</span>
               </p>
             </li>
           </ul>
