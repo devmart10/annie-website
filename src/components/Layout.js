@@ -87,6 +87,7 @@ const Layout = ({ children }) => {
       <Seo></Seo>
       <Head>
         <link rel='shortcut icon' href='/favicon.png' />
+        <meta name='google-site-verification' content='iuePuwveIRTPC362A-1U6a47p3QaX2qRnY8-mAkUu70' />
       </Head>
       <div className='relative flex flex-col min-h-screen text-gray-100 bg-b-dark-purple'>
         <Header></Header>
