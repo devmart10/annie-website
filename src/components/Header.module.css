@@ -1,4 +1,4 @@
-.wrapper .links {
+/* .wrapper .links {
   max-height: 0;
   transition: max-height 0.25s ease-in-out;
   overflow: hidden;
@@ -6,4 +6,30 @@
 
 .wrapper.expand .links {
   max-height: 140px;
+} */
+
+@media (min-width: 768px) {
+  .bg {
+    background-image: linear-gradient(to right, #803c80 40%, #edf3d0);
+  }
+}
+.bg {
+  background-color: #803c80;
+}
+
+.header-link {
+  transition: all 0.3s ease-in-out;
+}
+
+.header-link:hover {
+  transform: scale3d(1.2, 1.2, 1.2);
+}
+
+.navbar {
+  top: 0px;
+  transition: top 0.6s;
+}
+
+.navbarHidden {
+  top: -92px;
 }

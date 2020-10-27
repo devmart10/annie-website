@@ -3,7 +3,7 @@ import React from "react";
 const Testimony = () => {
   return (
     <section id="testimony" className="wow">
-      <div className="mb-4 bg-white card">
+      <div className="mb-4 section">
         <h2 className="font-bold text-primary">Testimonials</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem impedit reiciendis eius totam nihil

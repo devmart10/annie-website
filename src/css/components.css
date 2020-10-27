@@ -1,16 +1,10 @@
 /* Portfolio Components */
 .my-container {
   @apply w-full;
-  @apply max-w-4xl;
   @apply mx-auto;
+  max-width: 1200px;
 }
 
-.card {
-  @apply py-4;
-}
-
-@screen md {
-  .card {
-    @apply py-8;
-  }
+.section {
+  /* TODO */
 }
