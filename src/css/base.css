@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Kaushan+Script&family=Marck+Script&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/*
+font-family: 'Courgette', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Marck Script', cursive;
+font-family: 'Open Sans', sans-serif;
+ */
+
 html,
 body,
 div#__next {
@@ -12,11 +21,11 @@ body {
 }
 
 h1 {
-  @apply mb-4 text-4xl;
+  @apply mb-4 text-6xl;
 }
 
 h2 {
-  @apply mb-3 text-3xl;
+  @apply mb-3 text-4xl;
 }
 
 h3 {
@@ -44,7 +53,39 @@ a:hover {
 }
 
 p {
-  @apply pb-4 leading-relaxed;
+  @apply pb-4 text-lg leading-loose;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Courgette', cursive;
+}
+p,
+a {
+  font-family: 'Lato', sans-serif;
+}
+
+.text-fancy {
+  font-family: 'Courgette', cursive;
+}
+
+.text-body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+  @apply tracking-wide;
 }
 
 .flex-center {
