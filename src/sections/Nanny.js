@@ -6,7 +6,7 @@ const Nanny = () => {
   return (
     <>
       <section id='nanny-description' className='wow'>
-        <div className='mb-8 md:mb-16 section'>
+        <div className='mb-8 md:my-16 section'>
           <h1 className='font-bold text-b-yellow'>Nannying</h1>
           <p>
             Are you feeling overwhelmed and noticing that your child or children are needing more support? Most parents and children need extra support. I can provide the support and co-regulation

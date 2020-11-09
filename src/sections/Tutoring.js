@@ -6,7 +6,7 @@ const Tutoring = () => {
   return (
     <>
       <section id='tutoring-description' className='wow'>
-        <div className='mb-8 md:mb-16 section'>
+        <div className='mb-8 md:my-16 section'>
           <h1 className='font-bold text-b-yellow'>Tutoring</h1>
           <p>
             Are you and/ or your children feeling overwhelmed by schoolwork? Is it affecting your relationship and making things extra difficult? Most children and parents need extra support. When we

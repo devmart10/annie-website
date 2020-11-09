@@ -6,7 +6,7 @@ const Vocal = () => {
   return (
     <>
       <section id='singing-description' className='wow'>
-        <div className='mb-8 md:mb-16 section'>
+        <div className='mb-8 md:my-16 section'>
           <h1 className='font-bold text-b-yellow'>Singing Lessons</h1>
           <p>
             Are you someone that’s excited or anxious about singing but have never gotten the support you’ve needed to grow your inner and outer voice? Freeing your vocal chords can actually assist in
