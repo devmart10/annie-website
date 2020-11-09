@@ -6,10 +6,10 @@ import { GiMicrophone, GiMusicalNotes } from 'react-icons/gi';
 const TextBoxSection = ({ reverse, children, title, Icon }) => {
   return (
     <div className={`flex items-center mb-16 ${reverse && 'flex-row-reverse'}`}>
-      <p className={`max-w-3xl py-4 ${reverse && 'text-right'}`}>
+      <div className={`max-w-3xl py-4 ${reverse && 'text-right'}`}>
         <h1 className='m-0 leading-none text-b-yellow md:text-4xl md:mb-4 md:font-light'>{title}</h1>
-        {children}
-      </p>
+        <p>{children}</p>
+      </div>
       {Icon && <Icon className='hidden mx-32 md:w-16 md:h-16 xl:w-32 xl:h-32 md:block text-b-yellow'></Icon>}
     </div>
   );
