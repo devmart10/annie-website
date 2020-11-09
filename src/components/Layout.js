@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Header from './Header';
 import Footer from './Footer';
@@ -82,6 +82,9 @@ const Layout = ({ children }) => {
       new WOW.WOW({ live: false, mobile: true }).init();
     }
   }, []);
+
+  const [headerHeight, setHeaderHeight] = useState(0);
+
   return (
     <>
       <Seo></Seo>
@@ -90,11 +93,13 @@ const Layout = ({ children }) => {
         <meta name='google-site-verification' content='iuePuwveIRTPC362A-1U6a47p3QaX2qRnY8-mAkUu70' />
       </Head>
       <div className='relative flex flex-col min-h-screen text-gray-100 bg-b-dark-purple'>
-        <Header></Header>
+        <Header height={headerHeight} setHeight={setHeaderHeight}></Header>
         <div className='absolute inset-0 hidden md:block'>
           <Vine></Vine>
         </div>
-        <main className='z-10 flex flex-col px-4 mt-32 mb-auto my-container'>{children}</main>
+        <main className='z-10 flex flex-col px-4 mb-auto my-container' style={{ marginTop: `${headerHeight}px` }}>
+          {children}
+        </main>
         <Footer></Footer>
       </div>
     </>

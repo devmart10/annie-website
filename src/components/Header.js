@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
 import styles from './Header.module.css';
@@ -57,7 +57,7 @@ const Button = () => (
   </div>
 );
 
-const Header = () => {
+const Header = ({ height, setHeight }) => {
   const [expanded, setExpanded] = useState(false);
   const [stickyState, setStickyState] = useState({
     prevScrollpos: 0,
@@ -84,8 +84,15 @@ const Header = () => {
     };
   }, [stickyState]);
 
+  const ref = useRef(null);
+
+  useEffect(() => {
+    console.log(ref.current.clientHeight);
+    setHeight(ref.current.clientHeight);
+  }, []);
+
   return (
-    <header className={`fixed z-50 w-full mb-4 ${styles.navbar} ${!stickyState.visible && styles.navbarHidden}`}>
+    <header ref={ref} className={`fixed z-50 w-full mb-4 ${styles.navbar}`} style={{ top: !stickyState.visible ? `-${height}px` : '0px' }}>
       <div className={`text-gray-100 shadow-lg ${styles.bg}`}>
         <div className={`${styles.wrapper} px-4 py-4 my-container  ${expanded && styles.expand}`}>
           <div className='flex flex-col'>
