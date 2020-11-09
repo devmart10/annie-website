@@ -31,14 +31,17 @@ const Nanny = () => {
             To find out more about my services, I offer a free 20-minute consultation. I'm flexible with scheduling and am confident working with all kinds of people. Click the link and it will
             redirect you to a Google Form, where you can provide your contact details. I will reach out to you within 3 days to set up our consultation. I look forward to hearing from you!
           </p>
-          <Link href='https://docs.google.com/forms/d/e/1FAIpQLScC9H1ULN8cfCZx8VPR2oYwg7dcnoh0pNrIrGagyAXv5Gryrg/viewform'>
-            <div className='inline-flex items-center p-4 text-white rounded-full bg-b-purple'>
-              <a className='mr-2 font-normal hover:no-underline' onClick={() => setExpanded(false)}>
-                Book a consultation
-              </a>
-              <FaArrowRight></FaArrowRight>
-            </div>
-          </Link>
+          <div className='inline-flex items-center p-4 text-white rounded-full bg-b-purple'>
+            <a
+              href='https://docs.google.com/forms/d/e/1FAIpQLScC9H1ULN8cfCZx8VPR2oYwg7dcnoh0pNrIrGagyAXv5Gryrg/viewform'
+              target='_blank'
+              className='mr-2 font-normal hover:no-underline'
+              onClick={() => setExpanded(false)}
+            >
+              Book a consultation
+            </a>
+            <FaArrowRight></FaArrowRight>
+          </div>
         </div>
       </section>
 

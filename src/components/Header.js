@@ -88,14 +88,17 @@ const Header = () => {
               </Link>
               <Links></Links>
             </div>
-            <Link href='https://docs.google.com/forms/d/e/1FAIpQLScC9H1ULN8cfCZx8VPR2oYwg7dcnoh0pNrIrGagyAXv5Gryrg/viewform'>
-              <div className='flex items-center p-4 ml-auto rounded-full bg-b-purple md:bg-b-faded-purple'>
-                <a className='mr-2 font-normal hover:no-underline' onClick={() => setExpanded(false)}>
-                  Book a consultation
-                </a>
-                <FaArrowRight></FaArrowRight>
-              </div>
-            </Link>
+            <div className='flex items-center p-4 ml-auto rounded-full bg-b-purple md:bg-b-faded-purple'>
+              <a
+                href='https://docs.google.com/forms/d/e/1FAIpQLScC9H1ULN8cfCZx8VPR2oYwg7dcnoh0pNrIrGagyAXv5Gryrg/viewform'
+                target='_blank'
+                className='mr-2 font-normal hover:no-underline'
+                onClick={() => setExpanded(false)}
+              >
+                Book a consultation
+              </a>
+              <FaArrowRight></FaArrowRight>
+            </div>
           </div>
         </div>
       </div>
