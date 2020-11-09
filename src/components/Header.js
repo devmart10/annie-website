@@ -35,7 +35,7 @@ const linkArray = [
 
 const Links = () => (
   <>
-    <ul className={`${styles.links} px-0 sm:px-0 py-0 flex flex-wrap sm:text-lg sm:justify-between items-center my-container`}>
+    <ul className={`${styles.links} px-0 sm:px-0 pb-2 sm:py-0 flex flex-wrap sm:order-3 sm:text-lg items-center my-container`}>
       {linkArray.map(({ link, title }, i) => (
         <div key={link}>
           <Link href={link}>
@@ -46,6 +46,15 @@ const Links = () => (
       ))}
     </ul>
   </>
+);
+
+const Button = () => (
+  <div className='flex items-center flex-shrink-0 p-4 rounded-full bg-b-purple md:bg-b-faded-purple'>
+    <a href='https://docs.google.com/forms/d/e/1FAIpQLScC9H1ULN8cfCZx8VPR2oYwg7dcnoh0pNrIrGagyAXv5Gryrg/viewform' target='_blank' className='mr-2 font-normal hover:no-underline'>
+      Book a consultation
+    </a>
+    <FaArrowRight></FaArrowRight>
+  </div>
 );
 
 const Header = () => {
@@ -79,25 +88,20 @@ const Header = () => {
     <header className={`fixed z-50 w-full mb-4 ${styles.navbar} ${!stickyState.visible && styles.navbarHidden}`}>
       <div className={`text-gray-100 shadow-lg ${styles.bg}`}>
         <div className={`${styles.wrapper} px-4 py-4 my-container  ${expanded && styles.expand}`}>
-          <div className='flex items-center'>
-            <div className='flex-col'>
+          <div className='flex flex-col'>
+            <div className='flex flex-col items-start sm:justify-between sm:items-center sm:flex-row'>
               <Link href='/'>
                 <a className='text-3xl font-normal text-fancy hover:no-underline' onClick={() => setExpanded(false)}>
                   Soul-Centered Services
                 </a>
               </Link>
-              <Links></Links>
+              <div className='sm:hidden'>
+                <Links></Links>
+              </div>
+              <Button></Button>
             </div>
-            <div className='flex items-center p-4 ml-auto rounded-full bg-b-purple md:bg-b-faded-purple'>
-              <a
-                href='https://docs.google.com/forms/d/e/1FAIpQLScC9H1ULN8cfCZx8VPR2oYwg7dcnoh0pNrIrGagyAXv5Gryrg/viewform'
-                target='_blank'
-                className='mr-2 font-normal hover:no-underline'
-                onClick={() => setExpanded(false)}
-              >
-                Book a consultation
-              </a>
-              <FaArrowRight></FaArrowRight>
+            <div className='hidden sm:block'>
+              <Links></Links>
             </div>
           </div>
         </div>
