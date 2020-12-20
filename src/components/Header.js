@@ -63,13 +63,18 @@ const Header = ({ height, setHeight }) => {
     prevScrollpos: 0,
     visible: true,
   });
+  const ref = useRef(null);
 
   // Hide or show the menu.
   const handleScroll = () => {
     const { prevScrollpos } = stickyState;
 
     const currentScrollPos = window.pageYOffset;
-    const visible = prevScrollpos > currentScrollPos;
+
+    const stickyNavBreakpoint = 500;
+    const isMobile = ref.current.clientWidth < stickyNavBreakpoint;
+
+    const visible = prevScrollpos > currentScrollPos || isMobile;
 
     setStickyState({
       prevScrollpos: currentScrollPos,
@@ -84,11 +89,12 @@ const Header = ({ height, setHeight }) => {
     };
   }, [stickyState]);
 
-  const ref = useRef(null);
-
   useEffect(() => {
-    console.log(ref.current.clientHeight);
+    console.log('height', ref.current.clientHeight);
+    console.log('width', ref.current.clientWidth);
+    // if (ref.current.clientWidth > stickyNavBreakpoint) {
     setHeight(ref.current.clientHeight);
+    // }
   }, []);
 
   return (
