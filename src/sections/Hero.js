@@ -6,10 +6,10 @@ import { GiMicrophone, GiMusicalNotes } from 'react-icons/gi';
 const TextBoxSection = ({ reverse, children, title, Icon }) => {
   return (
     <div className={`flex items-center mb-16 ${reverse && 'flex-row-reverse'}`}>
-      <p className={`max-w-3xl py-4 ${reverse && 'text-right'}`}>
-        <h1 className='m-0 leading-none text-b-yellow md:text-4xl md:mb-4 md:font-light'>{title}</h1>
-        {children}
-      </p>
+      <div className={`max-w-3xl py-4 ${reverse && 'text-right'}`}>
+        <h1 className='m-0 font-bold leading-none text-b-yellow md:text-4xl md:mb-4'>{title}</h1>
+        <p>{children}</p>
+      </div>
       {Icon && <Icon className='hidden mx-32 md:w-16 md:h-16 xl:w-32 xl:h-32 md:block text-b-yellow'></Icon>}
     </div>
   );
@@ -20,7 +20,7 @@ const Hero = () => {
     <section id='hero'>
       <div className='flex flex-col pt-4 mb-4 md:my-16'>
         <div className='flex flex-col justify-between mb-24'>
-          <h1 className='flex-shrink-0 m-0 mr-8 leading-none text-b-yellow md:text-6xl md:mb-4 md:font-light'>Soul-Centered Services</h1>
+          <h1 className='flex-shrink-0 m-0 mr-8 font-bold leading-none text-b-yellow md:text-6xl md:mb-4'>Soul-Centered Services</h1>
           <p className='mt-4 md:text-2xl'>
             Soul-Centered Services is a conscious and kind tutoring, nannying, and singing lessons service. Emphasizing a positive learning environment, Soul-Centered Services focuses on assisting you
             and/or your child in developing a growth mindset and skills to fulfill any goal.
