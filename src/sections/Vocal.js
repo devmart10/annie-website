@@ -43,7 +43,7 @@ const Vocal = () => {
       <section id='singing-pricing' className='wow'>
         <div className='mb-8 md:mb-16 section'>
           <h2 className='font-bold text-b-yellow'>Pricing</h2>
-          <p>$25 per hour and some sliding scale slots available.</p>
+          <p>$45 per hour and some sliding scale slots available.</p>
         </div>
       </section>
 
